@@ -1,8 +1,7 @@
 import streamlit as st
 import openai
 import time
-import os
-from dotenv import load_dotenv
+
 
 # --- OpenAI API Key ---
 openai.api_key = st.secrets["OPENAI_API_KEY"] if "OPENAI_API_KEY" in st.secrets else st.text_input("Enter your OpenAI API Key", type="password")
